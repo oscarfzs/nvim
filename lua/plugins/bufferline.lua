@@ -10,7 +10,7 @@ M.config = function()
 		options = {
 			offsets = {
 				{
-					filetype = "neo-tree",
+					filetype = "NvimTree",
 					text = "File Explorer",
 					highlight = "Directory",
 				},

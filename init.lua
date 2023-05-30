@@ -3,6 +3,7 @@ vim.g.mapleader = ','
 require("core.mappings")
 require("core.settings")
 
+-- install lazy.nvim if it is not installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	print("lazy.nvim not installed")
@@ -28,4 +29,3 @@ require('lazy').setup{
 }
 
 vim.keymap.set('n', '<leader>L', '<cmd>Lazy<cr>')
-vim.cmd("colorscheme kanagawa")

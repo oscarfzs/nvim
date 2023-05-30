@@ -2,6 +2,7 @@
 
 local M = {
 	'nvim-neo-tree/neo-tree.nvim',
+	enabled = false,
 
 	dependencies = {
 		"nvim-lua/plenary.nvim",

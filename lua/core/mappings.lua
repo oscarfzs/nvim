@@ -9,6 +9,9 @@ map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 
+map('n', '<Tab>', '<cmd>bnext<cr>')
+map('n', '<S-Tab>', '<cmd>bprev<cr>')
+
 -- Insert-Mode Mappings
 map('i', 'jk', '<Esc>') -- 'jk' to escape
 
