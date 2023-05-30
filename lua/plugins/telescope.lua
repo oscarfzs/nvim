@@ -16,7 +16,6 @@ M.keys = {
 	{ '<leader>fg', '<cmd>Telescope live_grep<cr>', 'n' },
 	{ '<leader>fb', '<cmd>Telescope buffers<cr>', 'n' },
 	{ '<leader>fh', '<cmd>Telescope help_tags<cr>', 'n' },
-	{ '<leader>fc', "<cmd>:lua require('telescope.builtin').colorscheme{}<cr>", 'n' }
 }
 
 return M

@@ -2,6 +2,7 @@ local handlers = {
   function (server_name)
     require('lspconfig')[server_name].setup{}
   end,
+  -- setup function for lua-language-server
   ['lua_ls'] = function ()
     local lspconfig = require('lspconfig')
     lspconfig.lua_ls.setup{
