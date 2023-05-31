@@ -1,3 +1,14 @@
+local function update_filepath_display()
+	local lualine = require('lualine')
+	local config = lualine.get_config()
+	local p = config.sections.lualine_c[1].path
+
+	-- cycle through filepath display mode
+	config.sections.lualine_c[1].path = p < 4 and p + 1 or 0  -- "ternary" operator hack
+	                                                          -- only works if second expression is non-nil
+	lualine.setup(config)
+end
+
 local M = {
 	'nvim-lualine/lualine.nvim',
 	dependencies = {
@@ -32,15 +43,5 @@ M.config = function()
 	}
 end
 
-function update_filepath_display()
-	local lualine = require('lualine')
-	local config = lualine.get_config()
-	local p = config.sections.lualine_c[1].path
-
-	-- cycle through filepath display mode
-	config.sections.lualine_c[1].path = p < 4 and p + 1 or 0  -- "ternary" operator hack
-	                                                          -- only works if second expression is non-nil
-	lualine.setup(config)
-end
 
 return M

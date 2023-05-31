@@ -25,6 +25,7 @@ require('lazy').setup{
 		{ import = 'plugins' },
 		{ import = 'themes' },
 		{ import = 'lsp' },
+		{ import = 'lsp.autocmp' },
 	},
 }
 

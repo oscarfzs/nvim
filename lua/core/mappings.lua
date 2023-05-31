@@ -2,7 +2,7 @@ local map = vim.keymap.set
 
 -- Normal-Mode Mappings
 map({'n', 'v'}, ';', ':')                      -- ';' to open command mode
-map('n', '<leader>rn', '<cmd>set rnu!<cr>')    -- toggle relative numbering
+map('n', '<leader>relu', '<cmd>set rnu!<cr>')    -- toggle relative numbering
 
 map('n', '<C-h>', '<C-w>h') -- for moving between windows
 map('n', '<C-j>', '<C-w>j')

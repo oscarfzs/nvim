@@ -12,9 +12,7 @@ local M = {
 	{ 'tpope/vim-surround' },
 
 	-- https://github.com/tpope/vim-sleuth
-	{
-		'tpope/vim-sleuth',
-	},
+	{ 'tpope/vim-sleuth' },
 
 	-- https://github.com/kg8m/vim-simple-align
 	{ 'kg8m/vim-simple-align' },

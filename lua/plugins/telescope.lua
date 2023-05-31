@@ -12,10 +12,11 @@ local M = {
 }
 
 M.keys = {
-	{ '<leader>ff', '<cmd>Telescope find_files<cr>', 'n' },
+	{ '<leader>ff', '<cmd>Telescope find_files<cr>', 'n'},
 	{ '<leader>fg', '<cmd>Telescope live_grep<cr>', 'n' },
 	{ '<leader>fb', '<cmd>Telescope buffers<cr>', 'n' },
 	{ '<leader>fh', '<cmd>Telescope help_tags<cr>', 'n' },
+	{ '<leader>fm', '<cmd>Telescope keymaps<cr>', 'n' },
 }
 
 return M
