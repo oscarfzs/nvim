@@ -52,7 +52,7 @@ M.keys = {
   { 'gD', vim.lsp.buf.declaration, 'n' },
   { 'gd', vim.lsp.buf.definition, 'n' },
 
-  { '<leader>R', vim.lsp.buf.rename, 'n' },
+  { '<leader>rn', vim.lsp.buf.rename, 'n' },
 }
 
 return M
