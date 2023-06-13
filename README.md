@@ -7,6 +7,9 @@ nvim/
             mappings.lua
             settings.lua
         lsp/
+            autocmp/
+                init.lua
+                nvim-cmp.lua
             init.lua
             lspconfig.lua
             mason.lua
