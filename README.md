@@ -15,8 +15,8 @@ nvim/
             mason.lua
             ...
         plugins/
-            init.lua
-            telescope.lua
+            init.lua        <-- plugins with little to no configuration go into init.lua
+            telescope.lua   <-- plugins with more complicated configs get their own file (and sometimes folder)
             lualine.lua
             ...
         themes/
