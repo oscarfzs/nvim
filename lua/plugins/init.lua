@@ -4,6 +4,12 @@ local M = {
 		'numToStr/Comment.nvim',
 		config = true,
 		cond = true,
+		keys = {
+			{ "gcc", mode = "n" },
+			{ "gc", mode = "v"},
+			{ "gbc", mode = "n" },
+			{ "gb", mode = "v" },
+		}
 	},
 
 	-- https://github.com/AndrewRadev/splitjoin.vim
@@ -19,7 +25,10 @@ local M = {
 	},
 
 	-- https://github.com/tpope/vim-sleuth
-	{ 'tpope/vim-sleuth' },
+	{
+		'tpope/vim-sleuth',
+		enabled=false,
+	},
 
 	-- https://github.com/kg8m/vim-simple-align
 	{ 'kg8m/vim-simple-align' },

@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------------------------
 
 -- For the 'filename'
-local function update_filepath_display()
+local function change_filepath_display()
 	local lualine = require('lualine')
 	local config = lualine.get_config()
 	local p = config.sections.lualine_c[1].path
@@ -21,6 +21,18 @@ local function indent_type()
 		return string.format("Tabs: %d", ts)
 	else
 		return string.format("Spaces: %d", sw)
+	end
+end
+
+local function custom_location(format_string)
+	if format_string == nil then
+		format_string = '%3d:%-2d'
+	end
+
+	return function()
+		local line = vim.fn.line('.')
+		local col = vim.fn.virtcol('.')
+		return string.format(format_string, line, col)
 	end
 end
 
@@ -46,18 +58,21 @@ M.config = function()
 				{
 					'filename',
 					path = 4,
-					on_click = update_filepath_display,
+					on_click = change_filepath_display,
 				}
 			},
 
 			lualine_x = {
-				'location',
+				-- 'location',
+				custom_location("Ln: %d, Col: %d"),
 				'progress',
 			},
+
 			lualine_y = {
 				indent_type,
 				'encoding',
 			},
+
 			lualine_z = {
 				'filetype',
 			}

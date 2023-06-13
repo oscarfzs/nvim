@@ -5,6 +5,7 @@ local M = {
 
 M.config = function()
 	require('nvim-tree').setup {
+		disable_netrw = true,
 		view = {
 			float = {
 				enable = false,
