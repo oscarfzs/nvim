@@ -3,13 +3,20 @@ local M = {
 	{
 		'numToStr/Comment.nvim',
 		config = true,
+		cond = true,
 	},
 
 	-- https://github.com/AndrewRadev/splitjoin.vim
-	{ 'AndrewRadev/splitjoin.vim' },
+	{
+		'AndrewRadev/splitjoin.vim',
+		cond = true,
+	},
 
 	-- https://github.com/tpope/vim-surround
-	{ 'tpope/vim-surround' },
+	{
+		'tpope/vim-surround',
+		cond = true,
+	},
 
 	-- https://github.com/tpope/vim-sleuth
 	{ 'tpope/vim-sleuth' },

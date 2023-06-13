@@ -20,6 +20,7 @@ local handlers = {
 local ensure_installed = {
   -- "clangd",
   "gopls",
+  "clangd",
   "lua_ls",
   "pyright",
   "rust_analyzer",

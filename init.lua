@@ -27,6 +27,10 @@ require('lazy').setup{
 		{ import = 'lsp' },
 		{ import = 'lsp.autocmp' },
 	},
+	defaults = {
+		cond = not vim.g.vscode, -- by default, plugins are not loaded in vscode
+	}
 }
+
 
 vim.keymap.set('n', '<leader>L', '<cmd>Lazy<cr>')

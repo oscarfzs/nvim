@@ -14,8 +14,9 @@ map('n', '<S-Tab>', '<cmd>bprev<cr>')
 
 -- Insert-Mode Mappings
 map('i', 'jk', '<Esc>') -- 'jk' to escape
+map('i', 'jj', '<Esc>') -- 'jj' to escape
 
-map('i', '<C-h>', '<C-o>h') -- hjkl movement in insert mode
-map('i', '<C-j>', '<C-o>j')
-map('i', '<C-k>', '<C-o>k')
-map('i', '<C-l>', '<C-o>l')
+map('i', '<C-h>', '<Left>') -- hjkl movement in insert mode
+map('i', '<C-j>', '<Down>')
+map('i', '<C-k>', '<Up>')
+map('i', '<C-l>', '<Right>')

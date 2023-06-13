@@ -4,7 +4,7 @@ local M = {
 }
 
 M.opts = {
-	open_mapping = [[<C-`>]],
+	open_mapping = [[<C-t>]],
 }
 
 return M
