@@ -1,11 +1,8 @@
 local M = {
 	'williamboman/mason.nvim',
 	build = ':MasonUpdate',
+	config = true,
 }
-
-M.config = function()
-	require('mason').setup()
-end
 
 M.keys = {
 	{ '<leader>M', '<cmd>Mason<cr>', 'n' },

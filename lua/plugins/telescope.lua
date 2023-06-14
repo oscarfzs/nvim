@@ -2,6 +2,7 @@ local M = {
 	'nvim-telescope/telescope.nvim',
 	dependencies = {
 		'nvim-lua/plenary.nvim',
+		'nvim-telescope/telescope-fzf-native.nvim',
 	},
 }
 
@@ -16,8 +17,12 @@ M.config = function()
 		},
 
 		pickers = {
+			live_grep = {
+				theme = 'ivy',
+			},
 			colorscheme = {
 				enable_preview = true,
+				theme = 'dropdown',
 				file_ignore_patterns = {	-- ignore those awful builtin colorschemes
 					'blue',
 					'darkblue',

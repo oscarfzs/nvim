@@ -24,19 +24,17 @@ local M = {
 		cond = true,
 	},
 
-	-- https://github.com/tpope/vim-sleuth
-	{
-		'tpope/vim-sleuth',
-		enabled=false,
-	},
-
 	-- https://github.com/kg8m/vim-simple-align
-	{ 'kg8m/vim-simple-align' },
+	{
+		'kg8m/vim-simple-align',
+		cmd = "SimpleAlign",
+	},
 
 	-- https://github.com/windwp/nvim-autopairs
 	{
 		'windwp/nvim-autopairs',
 		config = true,
+		event = "InsertEnter",
 	},
 }
 

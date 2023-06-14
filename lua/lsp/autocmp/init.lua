@@ -1,9 +1,11 @@
 local M = {
 	-- The following plugins are for code completion
 	{
+		-- https://github.com/hrsh7th/nvim-cmp
 		'hrsh7th/nvim-cmp',
 	},
 
+	-- Auto-completion sources
 	{
 		'hrsh7th/cmp-cmdline',
 	},

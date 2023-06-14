@@ -1,5 +1,5 @@
--- https://github.com/hrsh7th/nvim-cmp
 local M = 	{
+	-- https://github.com/hrsh7th/nvim-cmp
 	'hrsh7th/nvim-cmp',
 }
 
@@ -32,24 +32,32 @@ M.config = function()
 		)
 	}
 
-
-	-- something to do with buffers
-	cmp.setup.cmdline({ '/', '?' }, {
-		mapping = cmp.mapping.preset.cmdline(),
-		sources = {
-			{ name = 'buffer' }
+	-- completion for / and ? search for the current buffer
+	cmp.setup.cmdline(
+		{ '/', '?' },
+		{
+			mapping = cmp.mapping.preset.cmdline(),
+			sources = {
+				{ name = 'buffer' }
+			}
 		}
-	})
+	)
 
-	-- cmdline completion
-	cmp.setup.cmdline(':', {
-		mapping = cmp.mapping.preset.cmdline(),
-		sources = cmp.config.sources({
-			{ name = 'path' }
-		}, {
-			{ name = 'cmdline' }
-		})
-	})
+	-- completion for the commandline
+	cmp.setup.cmdline(
+		{ ':' },
+		{
+			mapping = cmp.mapping.preset.cmdline(),
+			sources = cmp.config.sources(
+				{
+					{ name = 'path' }
+				},
+				{
+					{ name = 'cmdline' }
+				}
+			)
+		}
+	)
 end
 
 return M

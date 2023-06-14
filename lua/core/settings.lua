@@ -13,3 +13,5 @@ set.tabstop = 4
 set.shiftwidth = 4
 
 set.showmode = false
+
+vim.cmd([[set noswapfile]])

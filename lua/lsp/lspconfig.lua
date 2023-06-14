@@ -16,14 +16,14 @@ M.config = function()
 end
 
 M.keys = {
-	{ '<leader>e', vim.diagnostic.open_float, 'n' },
+	{ '<leader>e', vim.diagnostic.open_float, 'n', desc="lspconfig vim.diagnostic.open_float" },
 
-	{ 'gD', vim.lsp.buf.declaration, 'n' },
-	{ 'gd', vim.lsp.buf.definition, 'n' },
-	{ 'gr', vim.lsp.buf.references, 'n' },
-	{ 'K', vim.lsp.buf.hover },
+	{ 'gD', vim.lsp.buf.declaration, 'n', desc="lspconfig vim.lsp.buf.declaration" },
+	{ 'gd', vim.lsp.buf.definition, 'n', desc="lspconfig vim.lsp.buf.definition" },
+	{ 'gr', vim.lsp.buf.references, 'n', desc="lspconfig vim.lsp.buf.references" },
+	{ 'K', vim.lsp.buf.hover, 'n', desc="lspconfig vim.lsp.buf.hover" },
 
-	{ '<leader>rn', vim.lsp.buf.rename, 'n' },
+	{ '<leader>rn', vim.lsp.buf.rename, 'n', desc="lspconfig vim.lsp.buf.rename" },
 }
 
 return M
