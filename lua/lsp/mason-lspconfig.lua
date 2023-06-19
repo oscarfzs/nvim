@@ -25,6 +25,8 @@ local ensure_installed = {
 	"rust_analyzer",
 }
 
+----------------------------------------------------------------------------------------------------
+
 local M = {
 	'williamboman/mason-lspconfig.nvim',
 }
