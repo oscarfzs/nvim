@@ -27,7 +27,7 @@ M.config = function()
 				['<C-b>'] = cmp.mapping.scroll_docs(-4),
 				['<C-f>'] = cmp.mapping.scroll_docs(4),
 				['<C-e>'] = cmp.mapping.abort(),
-				['<cr>'] = cmp.mapping.confirm( { select = true } ),
+				['<cr>'] = cmp.mapping.confirm( { select = false } ),
 			}
 		)
 	}

@@ -1,4 +1,5 @@
 local ensure_installed = {
+	"haskell",
    "c",
    "go",
    "lua",
