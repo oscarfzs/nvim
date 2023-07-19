@@ -42,4 +42,4 @@ require('lazy').setup{
 
 vim.keymap.set('n', '<leader>L', '<cmd>Lazy<cr>')
 
-vim.cmd.colorscheme 'catppuccin-macchiato'
+vim.cmd.colorscheme 'catppuccin-latte'

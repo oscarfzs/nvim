@@ -51,14 +51,16 @@ M.config = function()
 	}
 
 	require('telescope').load_extension('fzf')
+	require('telescope').load_extension('aerial')
 end
 
 M.keys = {
+	{ '<leader>fb', '<cmd>Telescope buffers<cr>', 'n' },
 	{ '<leader>ff', '<cmd>Telescope find_files<cr>', 'n'},
 	{ '<leader>fg', '<cmd>Telescope live_grep<cr>', 'n' },
-	{ '<leader>fb', '<cmd>Telescope buffers<cr>', 'n' },
 	{ '<leader>fh', '<cmd>Telescope help_tags<cr>', 'n' },
 	{ '<leader>fm', '<cmd>Telescope keymaps<cr>', 'n' },
+	{ '<leader>fs', '<cmd>Telescope aerial<cr>', 'n' },
 	{ '<leader>th', '<cmd>Telescope colorscheme<cr>', 'n' },
 }
 

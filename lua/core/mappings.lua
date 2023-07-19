@@ -22,3 +22,6 @@ map('i', '<C-h>', '<Left>') -- hjkl movement in insert mode
 map('i', '<C-j>', '<Down>')
 map('i', '<C-k>', '<Up>')
 map('i', '<C-l>', '<Right>')
+
+map('n', '[t', ':tabprevious<cr>')
+map('n', ']t', ':tabnext<cr>')
