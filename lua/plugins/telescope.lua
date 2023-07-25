@@ -52,6 +52,7 @@ M.config = function()
 
 	require('telescope').load_extension('fzf')
 	require('telescope').load_extension('aerial')
+	require('telescope').load_extension('todo-comments')
 end
 
 M.keys = {
@@ -62,6 +63,7 @@ M.keys = {
 	{ '<leader>fm', '<cmd>Telescope keymaps<cr>', 'n' },
 	{ '<leader>fs', '<cmd>Telescope aerial<cr>', 'n' },
 	{ '<leader>th', '<cmd>Telescope colorscheme<cr>', 'n' },
+	{ '<leader>td', '<cmd>Telescope todo-comments todo<cr>', 'n' },
 }
 
 return M

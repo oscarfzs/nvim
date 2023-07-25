@@ -4,17 +4,19 @@ local handlers = {
 	end,
 	-- setup function for lua-language-server
 	['lua_ls'] = function ()
-		local lspconfig = require('lspconfig')
-		lspconfig.lua_ls.setup{
+		require('lspconfig').lua_ls.setup{
 			settings = {
 				Lua = {
 					diagnostics = {
 						globals = { 'vim' },
 					},
+					hint = {
+						enable = true,
+					},
 				},
 			},
 		}
-	end
+	end,
 }
 
 local ensure_installed = {

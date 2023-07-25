@@ -11,8 +11,14 @@ map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 
-map('n', '<Tab>', '<cmd>bnext<cr>')
+
+map('n', '[t', ':tabprevious<cr>')
+map('n', ']t', ':tabnext<cr>')
+
+map('n', '<Tab>', '<cmd>bnext<cr>') -- navigating buffers
 map('n', '<S-Tab>', '<cmd>bprev<cr>')
+map('n', '[b', ':bprevious<cr>')
+map('n', ']b', ':bnext<cr>')
 
 -- Insert-Mode Mappings
 map('i', 'jk', '<Esc>') -- 'jk' to escape
@@ -23,5 +29,5 @@ map('i', '<C-j>', '<Down>')
 map('i', '<C-k>', '<Up>')
 map('i', '<C-l>', '<Right>')
 
-map('n', '[t', ':tabprevious<cr>')
-map('n', ']t', ':tabnext<cr>')
+-- lsp
+map('n', '<leader>F', ':lua vim.lsp.buf.format()<cr>')

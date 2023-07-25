@@ -1,4 +1,6 @@
 local M = {
+	-- https://github.com/stevearc/aerial.nvim
+	-- A code outline window for skimming and quick navigation
 	'stevearc/aerial.nvim',
 	opts = {},
 	-- Optional dependencies

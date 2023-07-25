@@ -3,6 +3,10 @@ local M = {
 	'neovim/nvim-lspconfig',
 }
 
+M.opts = {
+	inlay_hints = true,
+}
+
 M.config = function()
 	local lspconfig = require('lspconfig')
 	local lsp_defaults = lspconfig.util.default_config

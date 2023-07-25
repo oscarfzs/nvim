@@ -30,10 +30,12 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup{
 	spec = {
-		{ import = 'plugins' },
-		{ import = 'themes' },
+		{ import = 'lang'},
 		{ import = 'lsp' },
 		{ import = 'lsp.autocmp' },
+		{ import = 'plugins' },
+		{ import = 'plugins.ui'},
+		{ import = 'themes' },
 	},
 	defaults = {
 		cond = not vim.g.vscode, -- by default, plugins are not loaded in vscode
@@ -42,4 +44,4 @@ require('lazy').setup{
 
 vim.keymap.set('n', '<leader>L', '<cmd>Lazy<cr>')
 
-vim.cmd.colorscheme 'catppuccin-latte'
+vim.cmd.colorscheme 'catppuccin-macchiato'

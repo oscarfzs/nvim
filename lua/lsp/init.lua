@@ -1,3 +1,4 @@
+-- lsp related tools
 local M = {
 	-- These three plugins must be loaded in the following order:
 	-- 1. mason.nvim
