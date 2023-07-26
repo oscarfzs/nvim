@@ -64,6 +64,7 @@ M.keys = {
 	{ '<leader>fs', '<cmd>Telescope aerial<cr>', 'n' },
 	{ '<leader>th', '<cmd>Telescope colorscheme<cr>', 'n' },
 	{ '<leader>td', '<cmd>Telescope todo-comments todo<cr>', 'n' },
+	{ '<leader>fo', ':lua require("telescope.builtin").oldfiles{}<cr>', 'n' },
 }
 
 return M

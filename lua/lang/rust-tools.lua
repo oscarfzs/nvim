@@ -8,7 +8,7 @@ local M = {
 	},
 	enabled = true,
 	ft = {
-		'rc',
+		'rs',
 	},
 }
 

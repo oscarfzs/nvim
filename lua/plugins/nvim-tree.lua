@@ -6,9 +6,10 @@ local M = {
 M.config = function()
 	require('nvim-tree').setup {
 		disable_netrw = true,
+		sync_root_with_cwd = true,
 		view = {
 			float = {
-				enable = false,
+				enable = true,
 			},
 		},
 	}
