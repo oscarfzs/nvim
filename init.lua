@@ -1,5 +1,6 @@
-require("core.mappings")
-require("core.settings")
+require("config.keymaps")
+require("config.options")
+
 -- install lazy.nvim if it is not installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
@@ -31,12 +32,15 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	spec = {
 		{ import = "lang" },
-		{ import = "lsp" },
-		{ import = "lsp.autocmp" },
+		-- { import = "lsp" },
+		-- { import = "lsp.autocmp" },
 		{ import = "plugins" },
 		{ import = "plugins.ui" },
 		{ import = "plugins.util" },
+		{ import = "plugins.lsp" },
+		{ import = "plugins.cmp" },
 		{ import = "plugins.editor" },
+		{ import = "plugins.other" },
 		{ import = "themes" },
 	},
 
@@ -45,6 +49,8 @@ require("lazy").setup({
 	},
 })
 
-vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>")
+if not vim.g.vscode then
+	vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>")
 
-vim.cmd.colorscheme("catppuccin-macchiato")
+	vim.cmd.colorscheme("catppuccin-macchiato")
+end

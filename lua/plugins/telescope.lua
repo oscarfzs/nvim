@@ -12,6 +12,10 @@ M.config = function()
 			mappings = {
 				n = {
 					['q'] = require("telescope.actions").close,
+					['<c-d>'] = require('telescope.actions').delete_buffer,
+				},
+				i = {
+					['<c-d>'] = require('telescope.actions').delete_buffer,
 				}
 			}
 		},
@@ -62,8 +66,8 @@ M.keys = {
 	{ '<leader>fh', '<cmd>Telescope help_tags<cr>', 'n' },
 	{ '<leader>fm', '<cmd>Telescope keymaps<cr>', 'n' },
 	{ '<leader>fs', '<cmd>Telescope aerial<cr>', 'n' },
-	{ '<leader>th', '<cmd>Telescope colorscheme<cr>', 'n' },
-	{ '<leader>td', '<cmd>Telescope todo-comments todo<cr>', 'n' },
+	-- { '<leader>th', '<cmd>Telescope colorscheme<cr>', 'n' },
+	-- { '<leader>td', '<cmd>Telescope todo-comments todo<cr>', 'n' },
 	{ '<leader>fo', ':lua require("telescope.builtin").oldfiles{}<cr>', 'n' },
 }
 
