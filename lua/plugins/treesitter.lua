@@ -8,6 +8,7 @@ local ensure_installed = {
    "solidity",
    "vim",
    "vimdoc",
+	"latex",
 }
 
 local M =  {

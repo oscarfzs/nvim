@@ -14,8 +14,8 @@ map('n', '<C-l>', '<C-w>l')
 map('n', '[t', ':tabprevious<cr>')
 map('n', ']t', ':tabnext<cr>')
 
--- map('n', '<Tab>', '<cmd>bnext<cr>') -- navigating buffers
--- map('n', '<S-Tab>', '<cmd>bprev<cr>')
+map('n', '<Tab>', '<cmd>bnext<cr>') -- navigating buffers
+map('n', '<S-Tab>', '<cmd>bprev<cr>')
 map('n', '[b', ':bprevious<cr>')
 map('n', ']b', ':bnext<cr>')
 

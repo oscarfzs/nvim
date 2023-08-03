@@ -12,8 +12,8 @@ M.config = function()
 		enable_autosnippets = true,
 		store_selection_keys = "<Tab>",
 	})
-	require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/snippets/luasnip/" })
-	require("luasnip.loaders.from_snipmate").load({ paths = "~/.config/nvim/snippets/snipmate/" })
+	require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/snippets/luasnip" })
+	-- require("luasnip.loaders.from_snipmate").load({ paths = "~/.config/nvim/snippets/snipmate/" })
 	-- require("luasnip.loaders.from_vscode").load{
 	-- 	paths = {
 	-- 		vscode = "~/.config/nvim/snippets/vscode/",

@@ -18,6 +18,7 @@ local M = {
 
 M.keys = {
 	{ "<leader>oo", ":ObsidianOpen<cr>", desc = "Obsidian Open"},
+	{ "<leader>on", ":ObsidianNew<cr>", desc = "Obsidian New"},
 	{ "<leader>os", ":ObsidianSearch<cr>", desc = "Obsidian Search"},
 }
 
