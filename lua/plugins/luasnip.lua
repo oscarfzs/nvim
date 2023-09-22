@@ -1,7 +1,7 @@
 -- https://github.com/L3MON4D3/LuaSnip/blob/master/DOC.md
 local M = {
 	"L3MON4D3/LuaSnip",
-	-- dependencies = { "rafamadriz/friendly-snippets" },
+	dependencies = { "rafamadriz/friendly-snippets" },
 	lazy = false,
 	enabled = true,
 	build = "make install_jsregexp",
@@ -14,11 +14,7 @@ M.config = function()
 	})
 	require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/snippets/luasnip" })
 	-- require("luasnip.loaders.from_snipmate").load({ paths = "~/.config/nvim/snippets/snipmate/" })
-	-- require("luasnip.loaders.from_vscode").load{
-	-- 	paths = {
-	-- 		vscode = "~/.config/nvim/snippets/vscode/",
-	-- 	}
-	-- }
+	require("luasnip.loaders.from_vscode").lazy_load() -- needed for friendly-snippets
 end
 
 M.keys = {

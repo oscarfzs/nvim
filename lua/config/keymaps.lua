@@ -6,12 +6,12 @@ local map = vim.keymap.set
 map({'n', 'v'}, ';', ':')                      -- ';' to open command mode
 map('n', '<leader>relu', '<cmd>set rnu!<cr>')    -- toggle relative numbering
 
-map('n', '<C-h>', '<C-w>h') -- for moving between windows
+map('n', '<C-h>', '<C-w>h') -- navigating windows
 map('n', '<C-j>', '<C-w>j')
 map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 
-map('n', '[t', ':tabprevious<cr>')
+map('n', '[t', ':tabprevious<cr>') -- navigating tabs
 map('n', ']t', ':tabnext<cr>')
 
 map('n', '<Tab>', '<cmd>bnext<cr>') -- navigating buffers

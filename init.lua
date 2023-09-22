@@ -38,7 +38,6 @@ require("lazy").setup({
 		{ import = "plugins.lsp" },
 		{ import = "plugins.cmp" },
 		{ import = "plugins.editor" },
-		{ import = "plugins.other" },
 		{ import = "themes" },
 	},
 

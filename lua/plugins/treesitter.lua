@@ -1,20 +1,22 @@
+-- https://github.com/nvim-treesitter/nvim-treesitter
+local M =  {
+   'nvim-treesitter/nvim-treesitter',
+   build = ':TSUpdate',
+}
+
 local ensure_installed = {
+	"css",
 	"haskell",
+	"html",
+	"javascript",
+	"latex",
    "c",
    "go",
    "lua",
    "query",
    "rust",
-   "solidity",
    "vim",
    "vimdoc",
-	"latex",
-}
-
-local M =  {
-   -- https://github.com/nvim-treesitter/nvim-treesitter
-   'nvim-treesitter/nvim-treesitter',
-   build = ':TSUpdate',
 }
 
 M.config = function()

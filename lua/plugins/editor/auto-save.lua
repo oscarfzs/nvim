@@ -1,6 +1,6 @@
+-- https://github.com/Pocco81/auto-save.nvim
+-- Automatically save your changes in NeoVim
 local M = {
-	-- https://github.com/Pocco81/auto-save.nvim
-	-- Automatically save your changes in NeoVim
 	"okuuva/auto-save.nvim",
 	lazy = false,
 	keys = {

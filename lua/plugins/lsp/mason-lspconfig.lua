@@ -28,6 +28,8 @@ local handlers = {
 local ensure_installed = {
 	"gopls",
 	"clangd",
+	"cssls",
+	"html",
 	"lua_ls",
 	"pyright",
 	"rust_analyzer",
