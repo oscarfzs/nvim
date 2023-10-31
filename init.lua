@@ -49,5 +49,5 @@ require("lazy").setup({
 if not vim.g.vscode then
 	vim.keymap.set("n", "<leader>L", "<cmd>Lazy<cr>")
 
-	vim.cmd.colorscheme("catppuccin-macchiato")
+	vim.cmd.colorscheme("catppuccin-latte")
 end
