@@ -4,7 +4,7 @@
 
 local map = vim.keymap.set
 
--- map({ "n", "v" }, ";", ":")
+-- map({ "n" }, ";", ":")
 
 map("n", "<C-h>", "<C-w>h") -- navigating windows in normal mode
 map("n", "<C-j>", "<C-w>j")
@@ -23,5 +23,9 @@ map("i", "<C-j>", "<Down>")
 map("i", "<C-k>", "<Up>")
 map("i", "<C-l>", "<Right>")
 
--- Tab Related Keymaps
-map("n", "<leader><tab>n", "<cmd> tabnew <cr>")
+-- Shortcut for deleting marks
+-- vim.keymap.set('n', '<CR>', '@="m`o<C-V><Esc>``"<CR>')
+-- vim.keymap.set('n', '<S-CR>', '@="m`O<C-V><Esc>``"<CR>')
+
+map('n', '<leader>dm', ':delmarks ')
+map('n', '<leader>dM', ':delmarks!<cr> ')
